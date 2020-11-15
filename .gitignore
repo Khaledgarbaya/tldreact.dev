@@ -1,3 +1,5 @@
 _site/
 node_modules/
 package-lock.json
+_tmp/
+yarn-error.log
