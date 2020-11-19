@@ -2,5 +2,5 @@ module.exports = {
   purge: ['./_site/**/*.html'],
   theme: {},
   variants: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }

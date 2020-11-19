@@ -1,14 +1,37 @@
-<ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+<div class="mt-12 grid gap-5 mx-auto lg:grid-cols-2 lg:max-w-none" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
 {% for post in postslist | reverse %}
-  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-    <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-    {% for tag in post.data.tags %}
-      {%- if collections.tagList.indexOf(tag) != -1 -%}
-      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-  </li>
+
+<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+        <div class="flex-shrink-0">
+          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
+        </div>
+        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+          <div class="flex-1">
+            <p class="text-sm leading-5 font-medium text-indigo-600">
+             {% for tag in post.data.tags %}
+          {%- if collections.tagList.indexOf(tag) != -1 -%}
+          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+          <a class="hover:underline" href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+          {%- endif -%}
+        {% endfor %} 
+            </p>
+            <a href="{{ post.url | url }}" class="block">
+              <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+               {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
+              </h3>
+              <p class="mt-3 text-base leading-6 text-gray-500">
+                {% if post.data.description %}{{ post.data.description }}{% endif %}
+              </p>
+            </a>
+          </div>
+          <div class="mt-6 flex items-center">
+            <div class="flex-shrink-0">
+              <a href="#">
+              Copy Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 {% endfor %}
-</ol>
+</div>

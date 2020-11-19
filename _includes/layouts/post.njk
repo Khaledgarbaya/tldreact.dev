@@ -2,9 +2,11 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
+<div class="prose lg:prose-xl">
 <h1>{{ title }}</h1>
 
 {{ content | safe }}
+
 
 <hr>
 <ul>
@@ -13,3 +15,4 @@ templateClass: tmpl-post
   {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 </ul>
+</div>
