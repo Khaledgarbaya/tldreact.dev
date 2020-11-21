@@ -2,7 +2,7 @@ const indexing = require('algolia-indexing')
 const algCredentials = {
   appId: process.env.ALG_APP_ID,
   apiKey: process.env.ALG_API_KEY,
-  indexName: 'eleventy_test',
+  indexName: 'tldreact',
 }
 
 const fetch = require('node-fetch')
