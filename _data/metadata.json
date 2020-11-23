@@ -1,12 +1,12 @@
 {
   "title": "TLDr;React",
-  "url": "https://tldreact.dev/",
+  "url": "https://tldreact.dev",
   "description": "tiny react snippet to do one thing",
   "feed": {
     "subtitle": "tiny react snippet to do one thing",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://tldreact.dev/"
+    "id": "https://tldreact.dev"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
@@ -15,6 +15,6 @@
   "author": {
     "name": "Khaled Garbaya",
     "email": "kgarbaya@gmail.com",
-    "url": "https://tldreact.dev/about-me/"
+    "url": "https://tldreact.dev/about"
   }
 }
