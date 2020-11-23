@@ -20,10 +20,28 @@
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
   @apply px-3 py-1 cursor-pointer;
 }
-.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-  @apply bg-blue-300;
-}
+
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
   font-weight: bold;
   font-style: normal;
+}
+.DocSearch-Footer {
+  flex: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  padding: 1.25rem 0;
+}
+.DocSearch-Logo a {
+  display: flex;
+  align-items: center;
+  color: #5d6494;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.DocSearch-Logo svg {
+  color: #5468ff;
+  margin-left: 0.5rem;
 }
