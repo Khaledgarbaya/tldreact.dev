@@ -28,31 +28,24 @@
 }
 
 .DocSearch-Footer {
-  margin: 0 1.5rem;
-  border-top: 1px solid #e5e7eb;
-  padding: 1.25rem 0;
+  @apply my-6 border-t border-gray-400;
 }
 .DocSearch-Logo {
-  @apply mt-4;
+  @apply mt-4 px-2;
 }
 .DocSearch-Logo a {
-  display: flex;
-  align-items: center;
-  color: #5d6494;
-  font-size: 0.75rem;
-  font-weight: 500;
+  @apply flex items-center text-gray-600 text-xs font-semibold;
 }
 
 .DocSearch-Logo svg {
-  color: #5468ff;
-  margin-left: 0.5rem;
+  @apply text-blue-500 ml-2;
 }
 
 .DocSearch-Commands {
   @apply flex items-center justify-between;
 }
 .DocSearch-Commands li {
-  @apply flex items-center justify-between border-b p-4;
+  @apply flex items-center justify-between p-2;
 }
 .DocSearch-Commands li span {
   @apply mx-3;
