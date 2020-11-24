@@ -75,6 +75,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('img')
   eleventyConfig.addPassthroughCopy('css')
+  eleventyConfig.addPassthroughCopy('public')
 
   eleventyConfig.addPassthroughCopy('js')
 
