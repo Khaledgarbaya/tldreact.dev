@@ -7,7 +7,7 @@ autocomplete('#search-input', {hint: false, keyboardShortcuts: ['s']}, [
     displayKey: 'title',
     templates: {
       suggestion: function (suggestion) {
-        return `<a href="${suggestion.url}" class="block focus:bg-blue-300 hover:bg-blue-300 border p-5 rounded-lg">${suggestion._highlightResult.title.value}</a>`
+        return suggestion._highlightResult.title.value
       },
       footer: function () {
         return `<footer class="DocSearch-Footer">

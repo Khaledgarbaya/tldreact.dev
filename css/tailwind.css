@@ -18,10 +18,10 @@
   @apply -ml-4 w-full text-gray-900 bg-white border border-t-0 shadow;
 }
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-  @apply px-3 py-2 cursor-pointer mx-4;
+  @apply px-3 py-4 cursor-pointer mx-4 rounded-lg border mb-2;
 }
-.algolia-autocomplete .aa-dropdown-menu .aa-suggestions .aa-cursor a {
-  @apply bg-blue-300 px-3;
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestions .aa-cursor {
+  @apply bg-blue-300 px-3 p-4 rounded-lg border mb-2;
 }
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
   @apply font-bold;
