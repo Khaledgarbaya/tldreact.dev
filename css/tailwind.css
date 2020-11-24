@@ -15,23 +15,25 @@
   @apply text-gray-900;
 }
 .algolia-autocomplete .aa-dropdown-menu {
-  @apply -ml-8 w-full text-gray-900 bg-white border border-t-0;
+  @apply -ml-4 w-full text-gray-900 bg-white border border-t-0 shadow;
 }
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-  @apply px-3 py-1 cursor-pointer;
+  @apply px-3 py-1 cursor-pointer mx-4;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestions .aa-cursor a {
+  @apply bg-blue-300;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+  @apply font-bold;
 }
 
-.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-  font-weight: bold;
-  font-style: normal;
-}
 .DocSearch-Footer {
-  flex: none;
-  display: flex;
-  justify-content: flex-end;
   margin: 0 1.5rem;
   border-top: 1px solid #e5e7eb;
   padding: 1.25rem 0;
+}
+.DocSearch-Logo {
+  @apply mt-4;
 }
 .DocSearch-Logo a {
   display: flex;
@@ -44,4 +46,14 @@
 .DocSearch-Logo svg {
   color: #5468ff;
   margin-left: 0.5rem;
+}
+
+.DocSearch-Commands {
+  @apply flex items-center justify-between;
+}
+.DocSearch-Commands li {
+  @apply flex items-center justify-between border-b p-4;
+}
+.DocSearch-Commands li span {
+  @apply mx-3;
 }
