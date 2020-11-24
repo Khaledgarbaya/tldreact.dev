@@ -9,8 +9,6 @@ const fetch = require('node-fetch')
 
 exports.handler = async (event, context) => {
   try {
-    /// HANDLE ALOGLIA
-    // first, get my index
     let dataResp = await fetch('https://tldreact.dev/algolia.json')
 
     let data = await dataResp.json()
