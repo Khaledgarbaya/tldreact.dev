@@ -7,7 +7,7 @@ layout: layouts/post.njk
 ---
 
 ```jsx
-class HelloMessage extends React.Component {
+class HelloMessage = function({name}){
   const [state, setState] = useState()
   useEffect(()=> {
      fetch(your_url)
@@ -20,9 +20,4 @@ class HelloMessage extends React.Component {
     return <div>Hello</div>
   }
 }
-
-ReactDOM.render(
-  <HelloMessage />,
-  document.getElementById('hello-example'),
-)
 ```

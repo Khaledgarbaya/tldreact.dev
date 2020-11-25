@@ -10,8 +10,6 @@ tags:
 layout: layouts/post.njk
 ---
 
-## Simple React Component
-
 React components implement a `render()` method that takes input data and returns
 what to display. This example uses an XML-like syntax called JSX. Input data
 that is passed into the component can be accessed by `render()` via this.props.
@@ -23,8 +21,5 @@ class HelloMessage extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <HelloMessage name="Taylor" />,
-  document.getElementById('hello-example'),
-)
+ReactDOM.render(<HelloMessage name="Taylor" />, document.getElementById('root'))
 ```

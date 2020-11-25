@@ -8,7 +8,7 @@ layout: layouts/post.njk
 ---
 
 ```jsx
-cont HelloMessage = function({name})
+const HelloMessage = function({name}){
   render() {
     return <div>Hello {name}</div>
   }
@@ -16,6 +16,6 @@ cont HelloMessage = function({name})
 
 ReactDOM.render(
   <HelloMessage name="Taylor" />,
-  document.getElementById('hello-example'),
+  document.getElementById('root'),
 )
 ```

@@ -5,9 +5,12 @@ eleventyNavigation:
   order: 1
 ---
 
-{% set maxPosts = collections.posts.length | min(3) %}
+{% set maxPosts = collections.posts.length | min(6) %}
 <h1 class="text-2xl">Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
 
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
+{% set postslist = collections.posts | reverse | head(-6) %}
+{% set postslistCounter = collections.posts | reverse | length %}
 {% include "postslist.njk" %}
+<a class="bg-blue-500 w-1/2 text-center mt-12 block mx-auto hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+ href="{{ '/posts/' | url }}">See All</a>
+
