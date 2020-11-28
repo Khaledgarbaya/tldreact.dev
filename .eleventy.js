@@ -83,6 +83,11 @@ module.exports = function (eleventyConfig) {
     return JSON.stringify(variable)
   })
 
+  eleventyConfig.addFilter('postImage', function (text) {
+    text = text.replace(/\//g, '')
+    text = text.replace(/posts/g, '')
+    return `/img/${text}`
+  })
   // Remove <code>.*</code>, remove HTML, then with plain text, limit to 5k chars
   eleventyConfig.addFilter('algExcerpt', function (text) {
     //first remove code
