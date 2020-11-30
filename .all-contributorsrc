@@ -9,6 +9,19 @@
   "imageSize": 150,
   "commit": true,
   "commitConvention": "angular",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "Khaledgarbaya",
+      "name": "Khaled Garbaya",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1156093?v=4",
+      "profile": "https://khaledgarbaya.net/",
+      "contributions": [
+        "code",
+        "design",
+        "content",
+        "maintenance"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
