@@ -5,7 +5,7 @@
 ## First Things First
 
 1. New to open source? take a look at [How to Contribute to an Open Source Project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
-2. Familiarize yourself with the [tldreact Code of Conduct](/code-of-conduct.md)
+2. Familiarize yourself with the [tldreact Code of Conduct](https://github.com/Khaledgarbaya/tldreact.dev/blob/main/code-of-conduct.md)
 
 ## What to Work On?
 
