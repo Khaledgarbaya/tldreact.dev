@@ -4,8 +4,8 @@
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  <a href="https://twitter.com/khaled\_garbaya" target="_blank">
-    <img alt="Twitter: khaled\_garbaya" src="https://img.shields.io/twitter/follow/khaled\_garbaya.svg?style=social" />
+  <a href="https://twitter.com/khaled_garbaya" target="_blank">
+    <img alt="Twitter: khaled_garbaya" src="https://img.shields.io/twitter/follow/khaled_garbaya.svg?style=social" />
   </a>
 </p>
 
@@ -13,7 +13,6 @@
 
 ### 🏠 [Homepage](tldreact.dev)
 
-### ✨ [Demo](tldreact.dev)
 
 ## Install
 
