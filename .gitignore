@@ -3,3 +3,4 @@ node_modules/
 package-lock.json
 _tmp/
 yarn-error.log*.DS_Store
+*.DS_Store
