@@ -13,7 +13,7 @@ Issues with the label [`status/ready-to-work-on`](https://github.com/Khaledgarba
 
 If you find one that looks interesting and no one else is already working on it, comment in the issue that you are going to work on it. But only claim an issue if you can start work on it within a couple days.
 
-Please ask as many questions as you need, either directly in the issue or in Slack. We're happy to help!
+Please ask as many questions as you need directly in the issue
 
 ### Things that are ALWAYS welcome
 
