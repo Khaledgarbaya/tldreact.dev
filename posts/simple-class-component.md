@@ -10,11 +10,10 @@ tags:
 layout: layouts/post.njk
 ---
 
-React components implement a `render()` method that takes input data and returns
-what to display. This example uses an XML-like syntax called JSX. Input data
-that is passed into the component can be accessed by `render()` via this.props.
-
 ```jsx
+import React from 'react'
+import ReactDOM from 'react-dom'
+
 class HelloMessage extends React.Component {
   render() {
     return <div>Hello {this.props.name}</div>

@@ -8,6 +8,9 @@ layout: layouts/post.njk
 ---
 
 ```jsx
+import React from 'react'
+import ReactDOM from 'react-dom'
+
 const HelloMessage = function({name}){
   render() {
     return <div>Hello {name}</div>
