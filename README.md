@@ -12,6 +12,8 @@
   </a>
 </p>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a5c63670-48df-455c-99c1-a75f5548ac1e/deploy-status)](https://app.netlify.com/sites/tldreact-dev/deploys)
+
 > To the point snippets to do one thing in react
 
 ### 🏠 [Homepage](tldreact.dev)
