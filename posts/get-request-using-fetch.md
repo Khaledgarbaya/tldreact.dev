@@ -3,6 +3,7 @@ title: Doing a (GET) fetch request
 description: Doing a (GET) fetch request on component mount
 date: 2020-11-15
 tags: fetch
+image: /img/get-request-using-fetch.png
 layout: layouts/post.njk
 ---
 

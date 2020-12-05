@@ -5,6 +5,7 @@ description:
   elements representing the current state
 date: 2020-11-25
 tags: component
+image: /img/react-conditional-rendering.png
 layout: layouts/post.njk
 ---
 
