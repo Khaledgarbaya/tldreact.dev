@@ -5,7 +5,7 @@ const algCredentials = {
   indexName: 'tldreact',
 }
 
-let data = require('./_site/algolia.json')
+let data = require('../_site/algolia.json')
 
 const updateAlgoliaIndex = async (event, context) => {
   try {
