@@ -31,6 +31,10 @@ yarn install
 yarn run start
 ```
 
+## Add your favorite Snippet
+
+To add you favorite snippet please refer to the [contributing guide](https://github.com/Khaledgarbaya/tldreact.dev/CONTRIBUTING.md)
+
 ## Author
 
 👤 **Khaled Garbaya**
