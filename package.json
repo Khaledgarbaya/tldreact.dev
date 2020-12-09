@@ -5,11 +5,12 @@
   "scripts": {
     "clean": "rm -rf _site",
     "start": "npm-run-all clean --parallel dev:*",
-    "dev:postcss": "postcss css/style.css -d _site/css/ --config ./postcss.config.js -w",
+    "dev:postcss": "postcss css/style.css -o _site/css/index.css --config ./postcss.config.js -w",
     "dev:eleventy": "ELEVENTY_ENV=development eleventy --watch --serve",
     "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
-    "prod:postcss": "postcss css/style.css -d _site/css/ --config ./postcss.config.js",
-    "prod:eleventy": "ELEVENTY_ENV=production eleventy"
+    "prod:postcss": "postcss css/style.css -o _site/css/index.css --config ./postcss.config.js",
+    "prod:eleventy": "ELEVENTY_ENV=production eleventy",
+    "postbuild": "node ./scripts/update-algolia-index.js"
   },
   "repository": {
     "type": "git",

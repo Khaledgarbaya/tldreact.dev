@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MVDXC21Q1"></script>
     <script>
@@ -17,12 +19,27 @@
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js"
       defer
     ></script>
+
     <title>{{ title or metadata.title }}</title>
     <meta
       name="description"
       content="{{ description or metadata.description }}"
     />
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+    <meta
+      name="og:description"
+      content="{{ description or metadata.description }}"
+    />
+    <meta
+      name="og:title"
+      content="{{ title or metadata.title }}"
+    />
+    <meta property="og:site_name" content="tldreact">
+    <meta property="og:url" content="tldreact.dev">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://tldreact.dev{{image or metadata.image}}">
+    <meta name="twitter:site" content="@tldreact">
+
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}" />
     <link rel="stylesheet" href="{{ '/css/prism-night-owl.css' | url }}" />
     <link
       rel="alternate"

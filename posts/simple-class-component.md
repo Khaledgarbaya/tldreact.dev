@@ -5,6 +5,7 @@ description:
   what to display. This example uses an XML-like syntax called JSX. Input data
   that is passed into the component can be accessed by render() via this.props.
 date: 2020-09-11
+image: /img/simple-class-component.png
 tags:
   - component
 layout: layouts/post.njk

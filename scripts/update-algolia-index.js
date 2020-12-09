@@ -5,13 +5,10 @@ const algCredentials = {
   indexName: 'tldreact',
 }
 
-const fetch = require('node-fetch')
+let data = require('../_site/algolia.json')
 
-exports.handler = async (event, context) => {
+const updateAlgoliaIndex = async (event, context) => {
   try {
-    let dataResp = await fetch('https://tldreact.dev/algolia.json')
-
-    let data = await dataResp.json()
     console.log(
       'Successfully got the data, size of articles ' + data.length,
       data[0].title,
@@ -33,3 +30,5 @@ exports.handler = async (event, context) => {
     return {statusCode: 500, body: err.toString()}
   }
 }
+
+updateAlgoliaIndex()

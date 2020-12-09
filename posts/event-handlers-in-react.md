@@ -3,16 +3,17 @@ title: EVENT HANDLER IN REACT
 description: a button example in React for a specific onClick event handler
 date: 2020-11-25
 tags: event-handling
+image: /img/event-handlers-in-react.png
 layout: layouts/post.njk
 ---
 
 ```jsx
-import React from 'react';
+import React from 'react'
 
 function App() {
   const handleClick = () => {
-    console.log('Button click ...');
-  };
+    console.log('Button click ...')
+  }
 
   return (
     <div>
@@ -20,6 +21,6 @@ function App() {
         Event Handler
       </button>
     </div>
-  );
+  )
 }
 ```

@@ -2,6 +2,7 @@
 title: A simple React function component
 description: This is a simple react function component
 date: 2020-11-15
+image: /img/simple-function-component.png
 tags:
   - component
 layout: layouts/post.njk

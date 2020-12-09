@@ -2,6 +2,7 @@
   "title": "TLDr;React",
   "url": "https://tldreact.dev",
   "description": "tiny react snippet to do one thing",
+  "image": "/img/og-image.jpg",
   "feed": {
     "subtitle": "tiny react snippet to do one thing",
     "filename": "feed.xml",

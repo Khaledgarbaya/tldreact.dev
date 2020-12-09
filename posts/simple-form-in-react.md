@@ -3,6 +3,7 @@ title: Simple Form in React
 description: A simple form in React using useState hooks
 date: 2020-12-04
 tags: component
+image: /img/simple-form-in-react.png
 layout: layouts/post.njk
 ---
 
