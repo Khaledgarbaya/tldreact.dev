@@ -9,8 +9,8 @@ layout: layouts/post.njk
 
 ```jsx
 function SimpleForm() {
-  const [firstName, setFirstName] = React.useState('')
-  const [lastName, setLastName] = React.useState('')
+  const [firstName, setFirstName] = React.useState("");
+  const [lastName, setLastName] = React.useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -19,24 +19,24 @@ function SimpleForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="firstName">First Name</label>
-        <input
-          type="text"
-          id="firstName"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-        />
+      <label htmlFor="firstName">First Name</label>
+      <input
+        type="text"
+        id="firstName"
+        value={firstName}
+        onChange={(e) => setFirstName(e.target.value)}
+      />
       </div>
       <div>
-        <label htmlFor="lastName">Last Name</label>
-        <input
-          type="text"
-          id="lastName"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-        />
+      <label htmlFor="lastName">Last Name</label>
+      <input
+        type="text"
+        id="lastName"
+        value={lastName}
+        onChange={(e) => setLastName(e.target.value)}
+      />
       </div>
     </form>
-  )
+  );
 }
 ```
