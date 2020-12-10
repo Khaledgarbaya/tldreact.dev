@@ -23,9 +23,7 @@ eleventyNavigation:
       </div>
     </div>
 {% set maxPosts = collections.posts.length | min(6) %}
-<div class="prose lg:prose-xl">
-<p class="text-sm italic"></p>
-
+<div class="mt-8 prose lg:prose-xl">
 <h2>Latest {% if maxPosts == 1 %}Snippet{% else %}{{ maxPosts }} Snippets{% endif %}</h2></div>
 
 {% set postslist = collections.posts | reverse | head(-6) %}
