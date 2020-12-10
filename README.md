@@ -18,7 +18,7 @@
 
 > To the point snippets to do one thing in react
 
-### 🏠 [Homepage](tldreact.dev)
+### 🏠 [Homepage](https://tldreact.dev)
 
 
 ## Install
