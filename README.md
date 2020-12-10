@@ -33,7 +33,7 @@ yarn run start
 
 ## Add your favorite Snippet
 
-To add you favorite snippet please refer to the [contributing guide](https://github.com/Khaledgarbaya/tldreact.dev/CONTRIBUTING.md)
+To add you favorite snippet please refer to the [contributing guide](https://github.com/Khaledgarbaya/tldreact.dev/blob/main/CONTRIBUTING.md)
 
 ## Author
 
@@ -45,7 +45,7 @@ To add you favorite snippet please refer to the [contributing guide](https://git
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Khaledgarbaya/tldreact.dev/issues). You can also take a look at the [contributing guide](https://github.com/Khaledgarbaya/tldreact.dev/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Khaledgarbaya/tldreact.dev/issues). You can also take a look at the [contributing guide](https://github.com/Khaledgarbaya/tldreact.dev/blob/main/CONTRIBUTING.md).
 
 ## Show your support
 
