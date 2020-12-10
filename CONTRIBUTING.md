@@ -21,7 +21,37 @@ Please ask as many questions as you need directly in the issue
 - Improved documentation
 - Performance or security improvements
 
+## How to add your snippet
+
+**1.** Create a new md file under `posts/you-snippet-name.md`
+
+**2.** Past the following text inside the newly created file
+
+```md
+---
+title: Your Snippet Title Goes here
+description: Your Snippet Description goes here
+date: Your Date goes here e.g 2020-12-04
+tags: Your snippet tags goes here (make sure to check the existing ones
+image: /img/you-snippet-name.png
+layout: layouts/post.njk
+---
+
+``` ```jsx
+// YOUR CODE SNIPPET GOES HERE
+
+``` ```
+
+```
+
+**3.** Generate preview Image by visiting this [link](https://carbon.now.sh/?bg=rgba%2831%2C129%2C109%2C1%29&t=night-owl&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%252F%252F%2520TLDreact%2520Snippet%2520Goes%2520here) and past in the same code you added in your md file
+
+**4.** Click Download and add the image inside the `img` folder and give it the same name you specified in the `image` frontmatter tag
+
+**5.** Add your changes to a branch and submit a PR.
+
 ## Development Setup
+
 **1.** Fork [the tldreact repo](https://github.com/Khaledgarbaya/tldreact)
 
 **2.** Clone your forked repo
