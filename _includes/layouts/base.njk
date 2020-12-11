@@ -24,7 +24,7 @@
         <meta name="og:title" content="{{ title or metadata.title }}"/>
         <meta name="og:description" content="{{ description or metadata.description }}"/>
         <meta property="og:site_name" content="tldreact">
-        <meta property="og:url" content="https://tldreact.dev">
+        <meta property="og:url" content="https://tldreact.dev/{{page.fileSlug}}">
         <meta property="og:type" content="article">
         <meta property="og:image" content="https://tldreact.dev{{image or metadata.image}}">
         
@@ -55,16 +55,26 @@
                         <div class="flex items-center flex-shrink-0 px-4">
                             <a href="/"><img class="w-auto h-8" src="/img/logo.svg" alt="tldreact"/></a>
                         </div>
-                        <div class="flex-1 h-0 mt-5 overflow-y-auto">
-                            <nav class="px-2 space-y-1">
-                                <a class="post-tag" href="/">All</a >
-                                {% for tag in collections.tagList %}
-                                    {% set tagUrl %}/tags/{{
-                tag }}/{% endset %}
-                                    <a class="post-tag" href="{{ tagUrl | url }}">{{ tag }}</a >
+                                                <div class="flex flex-col flex-grow mt-5">
+                            <nav class="flex-1 px-2 bg-white space-y-1">
+                                <a
+                                class="group nav-item{% if '/' == page.url %} bg-gray-100{% endif %} rounded-md py-2 px-2 flex items-center text-sm leading-5 font-medium text-gray-900 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150"
+                                href="/"
+                                class="post-tag"
+                                >All</a
+                                >
+                                {% for tag in collections.tagList %} {% set tagUrl %}/tags/{{
+                                tag }}/{% endset %}
+                                <a
+                                class="group nav-item{% if tagUrl == page.url %} bg-gray-100{% endif %} rounded-md py-2 px-2 flex items-center text-sm leading-5 font-medium text-gray-900 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150"
+                                href="{{ tagUrl | url }}"
+                                class="post-tag"
+                                >{{ tag }}</a
+                                >
                                 {% endfor %}
                             </nav>
-                        </div>
+                    </div>
+
                     </div>
                     <div class="flex-shrink-0 w-14">
                         <!-- Dummy element to force sidebar to shrink to fit close icon -->
@@ -80,14 +90,23 @@
                         </div>
                         <div class="flex flex-col flex-grow mt-5">
                             <nav class="flex-1 px-2 bg-white space-y-1">
-                                <a class="post-tag" href="/">All</a >
-                                {% for tag in collections.tagList %}
-                                    {% set tagUrl %}/tags/{{
-                tag }}/{% endset %}
-                                    <a class="post-tag" href="{{ tagUrl | url }}">{{ tag }}</a >
+                                <a
+                                class="group nav-item{% if '/' == page.url %} bg-gray-100{% endif %} rounded-md py-2 px-2 flex items-center text-sm leading-5 font-medium text-gray-900 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150"
+                                href="/"
+                                class="post-tag"
+                                >All</a
+                                >
+                                {% for tag in collections.tagList %} {% set tagUrl %}/tags/{{
+                                tag }}/{% endset %}
+                                <a
+                                class="group nav-item{% if tagUrl == page.url %} bg-gray-100{% endif %} rounded-md py-2 px-2 flex items-center text-sm leading-5 font-medium text-gray-900 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150"
+                                href="{{ tagUrl | url }}"
+                                class="post-tag"
+                                >{{ tag }}</a
+                                >
                                 {% endfor %}
                             </nav>
-                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
