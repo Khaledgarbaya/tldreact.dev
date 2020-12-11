@@ -1,10 +1,10 @@
 {
   "title": "TLDr;React",
   "url": "https://tldreact.dev",
-  "description": "tiny react snippet to do one thing",
+  "description": "Quick and easy React snippets that you're always looking for but never find",
   "image": "/img/og-image.jpg",
   "feed": {
-    "subtitle": "tiny react snippet to do one thing",
+    "subtitle": "Quick and easy React snippets that you're always looking for but never find",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://tldreact.dev"
