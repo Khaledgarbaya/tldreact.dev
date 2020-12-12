@@ -10,7 +10,7 @@ layout: layouts/post.njk
 ```jsx
 const innerHTML = {__html: '<p> Hello innerHTML </p>'}
 function MyComponent() {
-  return <div dangerouslySetInnerHTML={innerHTML />;
+  return <div dangerouslySetInnerHTML={innerHTML} />;
 }
 ```
 
